@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você é gostosa?</title>
+    <style>
+        h1#titulo{
+            font: normal 60pt Arial;
+            text-align: center;
+            -webkit-text-stroke-width: 5px;
+            -webkit-text-stroke-color: black;
+        }
+        input#txtnome{
+            align-self: center;
+            -webkit-text-stroke-width: 0px;
+        }
+        input#botao{
+            height: 100px;
+            width: 200px;
+            align-content: center;
+            -webkit-text-stroke-width: 0px;
+        }
+        body{
+            font: normal 40pt Arial;
+            color: rgb(255, 0, 255);
+            text-align: center;
+            /*background-color: rgb(250, 153, 170);*/
+            background-image: url(https://i.imgur.com/OJRGBCo.jpeg);
+            background-position: center;
+            background-size: cover;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">VOCÊ É GOSTOSA?</h1>
+    <p>Digite seu primeiro nome:</p>
+    <input type="text" name="txtnome" id="txtnome">
+    <p></p>
+    <input type="button" value="Fazer o teste!" onclick="eGostosa()" id="botao">
+    <p></p>
+    <div id="res"></div>
+    <script>
+        function eGostosa(){
+            var txtn = document.getElementById("txtnome")
+            var nome = txtn.value
+            var res = document.getElementById("res")
+
+            // Pega a ultima letra do que foi digitado no input
+            var nomeLastChar = nome.substr(nome.length - 1)
+
+			var joao = nome.toUpperCase()
+            var nomeLastCharU = nomeLastChar.toUpperCase()
+            if(nomeLastCharU == "A" || joao == "JOAO" || joao == "JOÃO"){
+                res.innerHTML = `Olá ${nome}! Parabéns, você é <strong>gostosa!</strong>`
+            }else if(nomeLastCharU == "E"){
+                res.innerHTML = `${nome}? mds mano seu nome parece pronome neutro AKKAKAKAKAK`
+            }else if(nomeLastCharU == ""){
+                res.innerHTML = `Tem que digitar seu nome...`
+            }else if(nomeLastCharU == "Y" || nomeLastCharU == "I"){
+                res.innerHTML = `Olá ${nome}! Parabéns, você é <strong>gostosa!</strong>`
+            }else {
+                res.innerHTML = `Olá ${nome}! Desculpa... infelizmente você não é gostosa...`
+            }
+        }
+    </script>
+</body>
+</html>
