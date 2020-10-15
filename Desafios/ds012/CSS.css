@@ -1,0 +1,15 @@
+body{
+    font-family: Arial;
+}
+
+input{
+    height: 50px;
+    width: 110px;
+    font-size: 25px;
+    font-family: Arial;
+}
+
+p{
+    font-family: Arial;
+    font-size: 25px;
+}
