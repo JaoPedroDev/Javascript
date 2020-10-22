@@ -8,11 +8,24 @@
 </head>
 <body>
     <h1>Calculadora</h1>
-    <div id="botoes">
-    <input type="button" value="7" id="i7"><input type="button" value="8" id="i8"><input type="button" value="9" id="i9"><input type="button" value="/" id="idivi"> </br>
-    <input type="button" value="4" id="i4"><input type="button" value="5" id="i5"><input type="button" value="6" id="i6"><input type="button" value="*"  id="imult"> </br>
-    <input type="button" value="1" id="i1"><input type="button" value="2" id="i2"><input type="button" value="3" id="i3"><input type="button" value="-" id="isubt"> </br>
-    <input type="button" value="0" id="i0"><input type="button" value="="  id="iresu"><input type="button" value="+"  id="imais"> </br>
+    
+    <div id="inp">
+        <input type="text" name="res" id="res" value=""></br>
+        <input type="button" value="7" id="i7" class="botoes" onclick="number(7)">
+        <input type="button" value="8" id="i8" class="botoes" onclick="number(8)">
+        <input type="button" value="9" id="i9" class="botoes" onclick="number(9)">
+        <input type="button" value="/" id="idivi" class="botoes"></br>
+        <input type="button" value="4" id="i4" class="botoes" onclick="number(4)">
+        <input type="button" value="5" id="i5" class="botoes" onclick="number(5)">
+        <input type="button" value="6" id="i6" class="botoes" onclick="number(6)">
+        <input type="button" value="*"  id="imult" class="botoes"></br>
+        <input type="button" value="1" id="i1" class="botoes" onclick="number(1)">
+        <input type="button" value="2" id="i2" class="botoes" onclick="number(2)">
+        <input type="button" value="3" id="i3" class="botoes" onclick="number(3)">
+        <input type="button" value="-" id="isubt" class="botoes"></br>
+        <input type="button" value="0" id="i0" class="botoes" onclick="number(0)">
+        <input type="button" value="="  id="iresu" class="botoes" onclick="calculator(`=`)">
+        <input type="button" value="+"  id="imais" class="botoes"></br>
     </div>
     <script src="script.js"></script>
 </body>

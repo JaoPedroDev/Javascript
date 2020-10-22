@@ -1,10 +1,14 @@
 input#i0{
     width: 54px;
 }
-input{
-    margin: 2px;
+.botoes{
+    margin-top: 4px;
     width: 25px;
+}
+input#res{
+    width: 105px;
 }
 body{
     text-align: center;
+    zoom: 2;
 }
