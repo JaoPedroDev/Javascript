@@ -1,10 +1,11 @@
-    res = document.getElementById("res")
-function number(n){//Escreve o numero do botão precionado no input "res"
-    res.value += n
+var valor = document.getElementById("visor")
+function botao(n){//Escreve o numero do botão precionado no input "visor"
+    valor.value += n
 }
-function calculator(o){//Deve calcular o resultado
-    var numbers = []
-    numbers.push(res.value)
-    alert(numbers)
-    res.value = ""
+function calcular(){
+    var res = eval(valor.value)
+    valor.value = res
+}
+function reset(){
+    valor.value = ""
 }

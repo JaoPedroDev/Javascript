@@ -1,11 +1,8 @@
-input#i0{
-    width: 54px;
-}
 .botoes{
     margin-top: 4px;
     width: 25px;
 }
-input#res{
+input#visor{
     width: 105px;
 }
 body{

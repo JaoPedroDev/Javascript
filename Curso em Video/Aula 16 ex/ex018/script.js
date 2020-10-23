@@ -1,5 +1,5 @@
     var inputnum = document.getElementById('txtnumber')
-    var num = [] //Declara arry vazia fora da função para não apagar a lista
+    var num = [] //Declara array vazia fora da função para não apagar a lista
     var lista = document.getElementById('lista')
     var res = document.getElementById('res')
 
