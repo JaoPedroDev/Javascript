@@ -9,3 +9,9 @@ function calcular(){
 function reset(){
     valor.value = ""
 }
+
+valor.onkeydown = function(event) {
+    if (event.key == 'Enter') {
+        calcular()
+    }
+}
