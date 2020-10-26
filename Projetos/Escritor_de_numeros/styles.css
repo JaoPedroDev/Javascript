@@ -1,0 +1,9 @@
+body{
+    text-align: center;
+}
+input#numero{
+    width: 50px;
+}
+div#res::first-letter{
+    text-transform: capitalize;
+}
